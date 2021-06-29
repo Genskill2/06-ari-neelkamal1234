@@ -27,8 +27,12 @@ string ari( string s)
                               count3++;
                           }
                 } 
-     }            
-                
+     }  count2++;
+  
+                   for( int i=0;s[i]!='\0';i++)
+                        if(s[i]=='e'&& s[i+1]=='.' && s[i+2]=='g' && s[i+3]=='.')
+                              count3 = count3-1;
+ 
       float ARI;
       int ari1;
       char st[1000];
