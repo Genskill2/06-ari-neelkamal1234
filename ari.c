@@ -31,7 +31,7 @@ string ari( string s)
                 
       float ARI;
       int ari1;
-      string st;
+      char st[1000];
       
       ARI = 4.71*(count1/count2) + 0.5*(count2/count3) -21.43 ;
                            
@@ -62,7 +62,8 @@ string ari( string s)
         
         }
         
-        return st;
+        strcpy( s, st[1000]);
+         return s;
         }
               
            
