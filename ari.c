@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <string.h>
+#include <cs50.h>
+
 char *ari( char *s)
 {  int count1 =0;
    int count2 =0;
