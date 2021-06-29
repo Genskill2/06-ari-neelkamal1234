@@ -44,26 +44,26 @@ string ari( string s)
         
       switch(ari1)
       {
-        case 1 : strcpy(st,"kindergarten");break;
-        case 2 : strcpy(st,"First/Second Grade");break;
-        case 3 : strcpy(st,"Third Grade");break;
-        case 4 : strcpy(st,"Fourth Grade");break;  
-        case 5 : strcpy(st,"Fifth Grade");break;
-        case 6 : strcpy(st,"Sixth Grade");break;
-        case 7 : strcpy(st,"Seventh Grade");break;
-        case 8 : strcpy(st,"Eighth Grade");break;      
-        case 9 : strcpy(st,"Ninth Grade");break;                 
-        case 10 : strcpy(st,"Tenth Grade");break; 
-        case 11 : strcpy(st,"Eleventh Grade");break;                 
-        case 12 : strcpy(st,"Twelfth Grade");break;               
-        case 13 : strcpy(st,"College Student");break;                
-        case 14 : strcpy(st,"Professor");break;                  
+        case 1 : st ="kindergarten";break;
+        case 2 : st ="First/Second Grade";break;
+        case 3 : st ="Third Grade";break;
+        case 4 : st ="Fourth Grade";break;  
+        case 5 : st ="Fifth Grade";break;
+        case 6 : st ="Sixth Grade";break;
+        case 7 : st ="Seventh Grade";break;
+        case 8 : st ="Eighth Grade";break;      
+        case 9 : st ="Ninth Grade";break;                 
+        case 10 : st ="Tenth Grade";break; 
+        case 11 : st ="Eleventh Grade";break;                 
+        case 12 : st ="Twelfth Grade";break;               
+        case 13 : st ="College Student";break;                
+        case 14 : st ="Professor";break;                  
         default :printf( " Invalid Choice \n" );
         
         }
         
         
-         return s;
+         return st;
         }
               
            
