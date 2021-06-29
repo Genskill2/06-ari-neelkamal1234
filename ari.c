@@ -21,7 +21,7 @@ string ari(string b)
             { c2+=1;}
                      
                
-         if( b[i]=='.'|| b[i]=='?')
+         if( b[i]=='.'|| b[i]=='?'|| b[i]=='!')
               { c3+=1; }
                   
             
@@ -47,7 +47,7 @@ string ari(string b)
       int r;
       string t;
       float a1 =(float)c1/c2;
-      float a2 = (float)c2/c3;
+      float a2 =(float)c2/c3;
       
       R = 4.71*a1 + 0.5*a2 -21.43 ;
                            
