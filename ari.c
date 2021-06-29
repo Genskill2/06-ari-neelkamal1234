@@ -12,22 +12,22 @@ string ari( string s)
      
      { 
        if ( s[i]>=48 && s[i]<=57)
-            count1++;
+            count1+=1;
       
       else if( (s[i]>=65 && s[i]<=90) || (s[i]>=97 && s[i]<=122) )
-               count1++;
+               count1+=1;
       
       
             else{
                   if( s[i] =='_' )
-                     count2++;
+                     count2+=1;
                      
                      else{
                            if( s[i]=='_'|| s[i]=='?')
-                              count3++;
+                              count3+=1;
                           }
                 } 
-     }  count2++;
+     }  count2+=1;
   
                    for( int i=0;s[i]!='\0';i++)
                         if(s[i]=='e'&& s[i+1]=='.' && s[i+2]=='g' && s[i+3]=='.')
@@ -39,7 +39,7 @@ string ari( string s)
       
       ARI = 4.71*((float)(count1/count2)) + 0.5*((float)(count2/count3)) -21.43 ;
                            
-     ari1 =(int)ARI+1; 
+     ari1 =(int)(ARI+1); 
         
         
       switch(ari1)
@@ -58,7 +58,7 @@ string ari( string s)
         case 12 : st ="Twelfth Grade";break;               
         case 13 : st ="College Student";break;                
         case 14 : st ="Professor";break;                  
-        default :printf( " Invalid Choice \n" );
+        
         
         }
         
