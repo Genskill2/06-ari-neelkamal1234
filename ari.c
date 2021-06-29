@@ -2,7 +2,7 @@
 #include <string.h>
 #include <cs50.h>
 
-char *ari( char *s)
+string ari( string s)
 {  int count1 =0;
    int count2 =0;
    int count3 =0;
@@ -31,7 +31,7 @@ char *ari( char *s)
                 
       float ARI;
       int ari1;
-       char st[1000];
+      string st;
       
       ARI = 4.71*(count1/count2) + 0.5*(count2/count3) -21.43 ;
                            
@@ -62,7 +62,7 @@ char *ari( char *s)
         
         }
         
-        return *st;
+        return st;
         }
               
            
