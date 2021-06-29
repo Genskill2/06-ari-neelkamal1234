@@ -6,10 +6,11 @@
 string ari( string s)
 {  int count1 =0;
    int count2 =0;
-   int count3 =0;
+   int count3 =0; 
+ int n = strlen(s);
    
  
-   for(int i=0;s[i]!='\0';i++)
+   for(int i=0;i<n;i++)
      
      { 
        if ( isalnum(s[i])==8)
@@ -27,8 +28,8 @@ string ari( string s)
      } 
  count2+=1;
   
-   for( int i=0;s[i]!='\0';i++){
-         if(s[i]=='e'&& s[i+1]=='.' && s[i+2]=='g' && s[i+3]=='.')
+   for( int j=0;j<n;j++){
+         if(s[j]=='e'&& s[j+1]=='.' && s[j+2]=='g' && s[j+3]=='.')
          { count3 = count3-1;}
        }
       
