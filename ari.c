@@ -62,7 +62,7 @@ string ari( string s)
         
         }
         
-        strcpy( s, st[1000]);
+        strcpy( s, st);
          return s;
         }
               
