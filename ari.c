@@ -38,7 +38,8 @@ string ari( string s)
      for( int i=1;i<=14;i++)
         {   
             if( ARI <= i)
-               {  ari1 = i; break;
+               {  ari1 = i; 
+                break;
                }
         }
         
