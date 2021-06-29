@@ -17,7 +17,7 @@ string ari(string s)
        { count1+=1;}
  
        
-        if( s[i] =='_')
+        if( s[i] ==' ')
         { count2+=1;}
                      
                
