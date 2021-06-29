@@ -21,7 +21,7 @@ string ari( string s)
                      count2+=1;
                      
                      else{
-                           if( s[i]=='_'|| s[i]=='?')
+                           if( s[i]=='.'|| s[i]=='?')
                               count3+=1;
                           }
                 } 
