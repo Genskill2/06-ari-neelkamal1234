@@ -49,7 +49,7 @@ string ari(string b)
       float a1 =(float)c1/c2;
       float a2 =(float)c2/c3;
       
-      R = 4.71*a1 + 0.5*a2 -21.43 ;
+      R = 4.71*a1+0.5*a2-21.43;
                            
       r =(int)(R+1.00); 
  
