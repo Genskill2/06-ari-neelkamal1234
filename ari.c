@@ -37,7 +37,7 @@ string ari( string s)
       int ari1;
       char st[1000];
       
-      ARI = 4.71*(count1/count2) + 0.5*(count2/count3) -21.43 ;
+      ARI = 4.71*((float)(count1/count2)) + 0.5*((float)(count2/count3)) -21.43 ;
                            
      for( int i=1;i<=14;i++)
         {   
