@@ -3,42 +3,43 @@
 #include <cs50.h>
 #include <ctype.h>
 
-string ari(string s)
+string ari(string b)
 {  int c1 =0;
    int c2 =0;
    int c3 =0; 
- int n = strlen(s);
+ int n = strlen(b);
    
  
    for(int i=0;i<n;i++)
      
      { 
-       if ( isalnum(s[i])==1)
+       if ( isalnum(b[i])==1)
               { c1+=1;}
  
        
-        if( s[i] ==' ')
+        if( b[i] ==' ')
             { c2+=1;}
                      
                
-         if( s[i]=='.'|| s[i]=='?')
+         if( b[i]=='.'|| b[i]=='?')
               { c3+=1; }
                   
             
-     } c2+=1;
+     } 
  
   
    for( int j=0;j<n;j++)
        {
-         if(s[j]=='e'&&s[j+1]=='.'&&s[j+2]=='g'&&s[j+3]=='.')
-         { c3 = c3-1;}
+         if(b[j]=='e'&&b[j+1]=='.'&&b[j+2]=='g'&&b[j+3]=='.')
+         { c3-=1;}
        }
  
  for( int k=0;k<n;k++)
      { 
-          if(s[k]=='-')
+          if(b[k]=='-')
               {c2+=1;}  
-       }
+       } 
+    c2+=1;
     
     
       
@@ -50,7 +51,7 @@ string ari(string s)
       
       R = 4.71*a1 + 0.5*a2 -21.43 ;
                            
-      r =(int)(R+1.0000); 
+      r =(int)(R+1.00); 
  
       switch(r)
       {
