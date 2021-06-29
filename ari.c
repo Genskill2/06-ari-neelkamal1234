@@ -58,11 +58,11 @@ char *ari( char *s)
         case 12 : strcpy(st,"Twelfth Grade");break;               
         case 13 : strcpy(st,"College Student");break;                
         case 14 : strcpy(st,"Professor");break;                  
-        default :printf( " Invalid Choice \n" )
+        default :printf( " Invalid Choice \n" );
         
         }
         
-        return st;
+        return *st;
         }
               
            
