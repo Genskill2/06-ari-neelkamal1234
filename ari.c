@@ -3,7 +3,7 @@
 #include <cs50.h>
 #include <ctype.h>
 
-string ari( string s)
+string ari(string s)
 {  int count1 =0;
    int count2 =0;
    int count3 =0; 
@@ -17,7 +17,7 @@ string ari( string s)
             count1+=1;
  
        
-        if( s[i] =='_'|| s[i]=='.' )
+        if( s[i] =='_'|| s[i]=='.'|| s[i]==',' )
             count2+=1;
                      
                
