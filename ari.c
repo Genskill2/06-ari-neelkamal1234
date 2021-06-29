@@ -14,15 +14,15 @@ string ari(string s)
      
      { 
        if ( isalnum(s[i])==1)
-       { c1+=1;}
+              { c1+=1;}
  
        
         if( s[i] ==' ')
-        { c2+=1;}
+            { c2+=1;}
                      
                
          if( s[i]=='.'|| s[i]=='?')
-         { c3+=1; }
+              { c3+=1; }
                   
             
      } c2+=1;
@@ -33,6 +33,14 @@ string ari(string s)
          if(s[j]=='e'&&s[j+1]=='.'&&s[j+2]=='g'&&s[j+3]=='.')
          { c3 = c3-1;}
        }
+ 
+ for( int k=0;k<n;k++)
+     { 
+          if(s[k]=='-')
+              {c2+=1;}  
+       }
+    
+    
       
       float R;
       int r;
