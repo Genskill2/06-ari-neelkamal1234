@@ -37,10 +37,12 @@ string ari( string s)
       float ARI;
       int ari1;
       string st;
+   float a1 =(float)count1/count2;
+   float a2 = (float)count2/count3;
       
-      ARI = 4.71*((float)(count1/count2)) + 0.5*((float)(count2/count3)) -21.43 ;
+      ARI = 4.71*a1 + 0.5*a2 -21.43 ;
                            
-     ari1 =(int)(ARI+1); 
+     ari1 =(int)(ARI+1.00); 
         
         
       switch(ari1)
