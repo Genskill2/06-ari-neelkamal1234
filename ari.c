@@ -12,11 +12,9 @@ string ari( string s)
    for(int i=0;s[i]!='\0';i++)
      
      { 
-       if ( s[i]>=48 && s[i]<=57)
+       if ( isalnum(s[i])==1)
             count1+=1;
-      
-      else if( (s[i]>=65 && s[i]<=90) || (s[i]>=97 && s[i]<=122) )
-               count1+=1;
+  
       
       
             else{
