@@ -35,17 +35,12 @@ string ari( string s)
  
       float ARI;
       int ari1;
-      char st[1000];
+      string st;
       
       ARI = 4.71*((float)(count1/count2)) + 0.5*((float)(count2/count3)) -21.43 ;
                            
-     for( int i=1;i<=14;i++)
-        {   
-            if( ARI <= i)
-               {  ari1 = i; 
-                break;
-               }
-        }
+     ari1 =(int)ARI+1; 
+        
         
       switch(ari1)
       {
@@ -67,7 +62,7 @@ string ari( string s)
         
         }
         
-        strcpy( s, st);
+        
          return s;
         }
               
