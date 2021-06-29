@@ -25,7 +25,7 @@ string ari(string s)
          { count3+=1; }
                   
             
-     } 
+     } count2+=1;
  
   
    for( int j=0;j<n;j++)
@@ -43,11 +43,7 @@ string ari(string s)
       ARI = 4.71*a1 + 0.5*a2 -21.43 ;
                            
       ari1 =(int)(ARI+1.0000); 
-        
  
- 
- 
-        
       switch(ari1)
       {
         case 1 : st ="kindergarten";break;
