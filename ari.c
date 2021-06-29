@@ -16,15 +16,15 @@ string ari( string s)
        if ( isalnum(s[i])==8)
             count1+=1;
  
-       else{
-               if( s[i] =='_'|| s[i]=='.' )
-                  count2+=1;
+       
+        if( s[i] =='_'|| s[i]=='.' )
+            count2+=1;
                      
                
-                if( s[i]=='.'|| s[i]=='?')
-                   count3+=1;
-                   
-           } 
+         if( s[i]=='.'|| s[i]=='?')
+            count3+=1;
+                  
+            
      } 
  
   
