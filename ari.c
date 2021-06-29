@@ -51,8 +51,8 @@ string ari(string b)
       
       R = 4.71*a1+0.5*a2-21.43;
                            
-      r =(int)(R+1.00); 
- 
+      r =(int)R; 
+      r+=1;
       switch(r)
       {
         case 1 : t ="kindergarten";break;
