@@ -13,16 +13,16 @@ string ari(string s)
    for(int i=0;i<n;i++)
      
      { 
-       if ( isalnum(s[i])==8)
-            count1+=1;
+       if ( isalnum(s[i])==1)
+       { count1+=1;}
  
        
-        if( s[i] =='_'|| s[i]=='.'|| s[i]==',' )
-            count2+=1;
+        if( s[i] =='_')
+        { count2+=1;}
                      
                
          if( s[i]=='.'|| s[i]=='?')
-            count3+=1;
+         { count3+=1; }
                   
             
      } 
@@ -30,7 +30,7 @@ string ari(string s)
   
    for( int j=0;j<n;j++)
        {
-         if(s[j]=='e'&& s[j+1]=='.' && s[j+2]=='g' && s[j+3]=='.')
+         if(s[j]=='e'&&s[j+1]=='.'&&s[j+2]=='g'&&s[j+3]=='.')
          { count3 = count3-1;}
        }
       
@@ -44,6 +44,9 @@ string ari(string s)
                            
       ari1 =(int)(ARI+1.0000); 
         
+ 
+ 
+ 
         
       switch(ari1)
       {
