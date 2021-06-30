@@ -2,83 +2,63 @@
 #include <string.h>
 #include <cs50.h>
 #include <ctype.h>
+#include <assert.h>
 
-string ari(string b)
-{  int c1 =0;
-   int c2 =0;
-   int c3 =0; 
- int n = strlen(b);
-   
- 
-   for(int i=0;i<n;i++)
-     
-     { 
-       if ( isalnum(b[i])==1)
-              { c1+=1;}
- 
-       
-        if( b[i] ==' ')
-            { c2+=1;}
-                     
-               
-         if( b[i]=='.'|| b[i]=='?'|| b[i]=='!')
-              { c3+=1; }
-                  
-            
-     } 
- 
-  
-   for( int j=0;j<n;j++)
-       {
-         if(b[j]=='e'&&b[j+1]=='.'&&b[j+2]=='g'&&b[j+3]=='.')
-         { c3-=1;}
-       }
- 
- for( int k=0;k<n;k++)
-     { 
-          if(b[k]=='-')
-              {c2+=1;}  
-       } 
-    c2+=1;
-    
-    
-      
-      float R;
-      int r;
-      string t;
-      float a1 =(float)c1/c2;
-      float a2 =(float)c2/c3;
-      
-      R = 4.71*a1+0.5*a2-21.43;
-                           
-      r =(int)R; 
-      r+=1;
-      switch(r)
-      {
-        case 1 : t ="kindergarten";break;
-        case 2 : t ="First/Second Grade";break;
-        case 3 : t ="Third Grade";break;
-        case 4 : t ="Fourth Grade";break;  
-        case 5 : t ="Fifth Grade";break;
-        case 6 : t ="Sixth Grade";break;
-        case 7 : t ="Seventh Grade";break;
-        case 8 : t ="Eighth Grade";break;      
-        case 9 : t ="Ninth Grade";break;                 
-        case 10 : t ="Tenth Grade";break; 
-        case 11 : t ="Eleventh Grade";break;                 
-        case 12 : t ="Twelfth Grade";break;               
-        case 13 : t ="College Student";break;                
-        case 14 : t ="Professor";break;                  
-        
-        
-        }
-        
-        
-         return t;
-        }
-              
-           
-           
+
+string ari(string s)
+{
+	int i = 0;
+	float t = 0;
+	float count1 = 0;
+	float count2 = 0;
+	float count3 = 0;
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		if (isalnum(s[i]))
+			count1++;
+		if (s[i] == ' ')
+			count2++;
+		if (s[i] == '.' || s[i] == '?' || s[i] == !)
+			count3++;
+	}
+	t = 4.71 * (count1 / count2) + 0.5 * (count2 / count3) - 21.43;
+	int y = t + 1;
+	switch (y)
+	{
+	case 1:
+		return "Kindergarten";
+	case 2:
+		return "First/Second Grade";
+	case 3:
+		return "Third Grade";
+	case 4:
+		return "Fourth Grade";
+	case 5:
+		return "Fifth Grade";
+	case 6:
+		return "Sixth Grade";
+	case 7:
+		return "Seventh Grade";
+	case 8:
+		return "Eighth Grade";
+	case 9:
+		return "Ninth Grade";
+	case 10:
+		return "Tenth Grade";
+	case 11:
+		return "Eleventh Grade";
+	case 12:
+		return "Twelfth grade";
+	case 13:
+		return "College student";
+	case 14:
+		return "Professor";
+	default:
+		break;
+	}
+	return " ";
+
+}
            
            
            
